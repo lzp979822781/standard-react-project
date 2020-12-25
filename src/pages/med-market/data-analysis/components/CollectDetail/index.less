@@ -1,0 +1,33 @@
+@pd-middle: 24px;
+
+.collect-detail {
+    padding: @pd-middle;
+
+    .content {
+        margin-top: 0px;
+        .table {
+            .table-head {
+                display: flex;
+                align-items: center;
+            }
+            .btn {
+                flex: 1;
+                text-align: right;
+            }
+        }
+    }
+
+    .title {
+        padding: @pd-middle 0;
+    }
+    .base-info {
+        padding: 0 0 @pd-middle;
+    }
+
+    .actName span {
+        vertical-align: top;
+        &:last-child {
+            max-width: 60%;
+        }
+    }
+}

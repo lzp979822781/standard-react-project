@@ -1,0 +1,19 @@
+@area-width: 32%;
+@area-right: 2%;
+
+.pull-effect-search {
+    .datepicker {
+        width: 100%
+    }
+
+    .area {
+        & > div:not(:last-child) {
+            width: @area-width;
+            margin-right: @area-right;
+        }
+
+        & > div:last-child {
+            width: @area-width;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@ml-small: 8px;
+@middleSize: 48px;
+
+.pull-sale {
+    margin-top: 56px;
+    padding-bottom: @middleSize;
+    .fill-width {
+        width: 100%;
+    }
+
+    .btn-container {
+        text-align: center;
+        & > button:last-child {
+            margin-left: @ml-small;
+        }
+    }
+
+    .container {
+        margin-top: 24px;
+        .prompt {
+            margin: @ml-small;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+@pd-middle: 24px;
+
+.pull-sale-detail {
+    padding: @pd-middle;
+
+    .content {
+        .table {
+            .table-head {
+                display: flex;
+                align-items: center;
+            }
+            .btn {
+                flex: 1;
+                text-align: right;
+            }
+        }
+    }
+
+    .base-info {
+        // padding: @pd-middle 0;
+    }
+    
+    :global {
+        .ant-descriptions-row > th, .ant-descriptions-row > td {
+            vertical-align: top;
+        }
+
+        .ant-table-title {
+            padding: 4px 0;
+        }
+    }
+
+    .actName span {
+        vertical-align: top;
+        &:last-child {
+            max-width: 60%;
+        }
+    }
+}

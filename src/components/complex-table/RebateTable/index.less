@@ -1,0 +1,49 @@
+@sel-width: 100%;
+@space: 2px;
+@icon-width: 52px;
+
+.rebate-table {
+    display: flex;
+    flex-direction: column;
+    .font-middle {
+        font-size: 18px;
+    }
+
+    .rebate-sel {
+        width: @sel-width;
+    }
+
+    .space {
+        padding: 0 @space;
+    }
+
+    .item-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+/*         & > div:not(:last-child) {
+            flex: 1
+        }
+
+        & div:last-child, & div:first-child {
+            flex: 0.5;
+        } */
+
+        /* .icon-wrap {
+            width: @icon-width;
+        } */
+
+        & > div:first-child {
+            width: 20%;
+        }
+
+        & > div:last-child {
+            min-width: @icon-width;
+        }
+
+        & > div {
+            padding: 0 8px 0 0;
+        }
+    }
+}

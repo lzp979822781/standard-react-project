@@ -1,0 +1,25 @@
+.upload-item {
+    background-color: #fafafa;
+    border-style: dashed !important;
+
+    .uploading-text {
+        margin-top: 18px;
+        color: rgba(0,0,0,0.45);
+        text-align: center;
+
+        &-error {
+            color: @errorColor;
+        }
+
+        .ellipse-show {
+            font-size: 12px;
+            display: -webkit-box;
+            /* autoprefixer: off*/
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-align: left;
+            word-break: break-all;
+        }
+    }
+}

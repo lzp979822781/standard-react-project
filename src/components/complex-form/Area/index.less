@@ -1,0 +1,35 @@
+
+@mr-small: 8px;
+
+.area {
+    display: flex;
+    align-items: center;
+
+    .tree-wrapper {
+        flex: 1;
+        .tree-select {
+            width: 100% !important;
+        }
+    }
+
+    
+
+    & > button {
+        margin-left: 8px;
+    }
+}
+
+
+.area-btn-modal {
+    .btn-wrapper {
+        text-align: right;
+        & > button:not(:last-child) {
+            margin-right: @mr-small;
+        }
+    }
+
+    .tree-wrapper {
+        max-height: 400px;
+        overflow: auto;
+    }
+}

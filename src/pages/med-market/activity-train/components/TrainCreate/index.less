@@ -1,0 +1,23 @@
+@ml: 8px;
+@mt: 54px;
+@middleSize: 48px;
+
+.train {
+    padding-bottom: @middleSize;
+    .content {
+        margin-top: @mt;
+        .prompt {
+            margin: @ml;
+        }
+    }
+    .btn-container {
+        text-align: center;
+        & > button:last-child {
+            margin-left: @ml;
+        }
+    }
+
+    .fill-width {
+        width: 100%;
+    }
+}

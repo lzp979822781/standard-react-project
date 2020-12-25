@@ -1,0 +1,150 @@
+.search-area {
+    transition: height .3s linear;
+    -webkit-transition: height .3s linear;
+    -moz-transition: height .3s linear;
+    -ms-transition: height .3s linear;
+    -o-transition: height .3s linear;
+    .ml8 {
+        margin-left: 8px;
+    }
+
+    .ft-normal {
+        font-size: 12px;
+    }
+
+    .search-form {
+        padding: 24px;
+        background: #fbfbfb;
+        border: 1px solid #d9d9d9;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        transition: height .3s linear;
+        -webkit-transition: height .3s linear;
+        -moz-transition: height .3s linear;
+        -ms-transition: height .3s linear;
+        -o-transition: height .3s linear;
+    }
+
+    .hide {
+        & * {
+            display: none;
+        }
+        height: 0;
+        animation: hideEle 0.2s;
+        -webkit-animation: hideEle 0.2s;
+        -moz-animation: hideEle 0.2s;
+        -ms-animation: hideEle 0.2s;
+        -o-animation: hideEle 0.2s;
+        animation-fill-mode:forwards;
+
+        // transition: height .5s linear;
+    }
+
+    .show {
+        display: block;
+        transition: all 0.5s;
+        animation: showEle 0.5s;
+        -webkit-animation: showEle 0.5s;
+        -moz-animation: showEle 0.5s;
+        -ms-animation: showEle 0.5s;
+        -o-animation: showEle 0.5s;
+    }
+
+    .inline-show {
+        display: inline-block;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+}
+
+
+
+@keyframes hideEle
+{
+    100% { 
+        opacity: 0;  
+        height: 0;
+        overflow: hidden;
+    }
+	0% { 
+        opacity: 1;  
+        height: 100%;
+    }
+}
+
+@-moz-keyframes hideEle {
+    100% { 
+        opacity: 0;  
+        height: 0;
+        overflow: hidden;
+    }
+	0% { 
+        opacity: 1;  
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes hideEle /* Safari 和 Chrome */
+{
+    100% { 
+        opacity: 0;  
+        height: 0;
+        overflow: hidden;
+    }
+	0% { 
+        opacity: 1;  
+        height: 100%;
+    }
+}
+
+@keyframes showEle
+{
+    0% { 
+        opacity: 0;  
+        height: 0
+    }
+	100% { 
+        opacity: 1;  
+        height: 100%;
+    }
+}
+
+@-moz-keyframes showEle /* Firefox */
+{
+    0% { 
+        opacity: 0;  
+        height: 0
+    }
+	100% { 
+        opacity: 1;  
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes showEle /* Safari 和 Chrome */
+{
+    0% { 
+        opacity: 0;  
+        height: 0
+    }
+	100% { 
+        opacity: 1;  
+        height: 100%;
+    }
+}
+
+@-o-keyframes showEle /* Opera */
+{
+    0% { 
+        opacity: 0;  
+        height: 0
+    }
+	100% { 
+        opacity: 1;  
+        height: 100%;
+    }
+}
+

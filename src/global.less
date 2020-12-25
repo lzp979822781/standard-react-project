@@ -1,0 +1,82 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ /* 
+    自定义全局样式 页面局中需要先将BasicLayout中的content高度设为100%
+ */
+
+ .standard-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+ }
+
+ .ellipse-multi {
+    display: -webkit-box;
+    /* autoprefixer: off*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+ }
+
+ .w-full{
+     width: 100%;
+ }
+
+ .ml-small {
+    margin-left: 8px;
+}
+
+.ml-middle {
+    margin-left: 16px;
+}
+
+.ml-large {
+    margin-left: 24px;
+}
+
+.mh-small {
+    margin: auto 8px;
+}
+
+.mh-middle {
+    margin: auto 16px;
+}
+
+.mh-large {
+    margin: auto 24px;
+}

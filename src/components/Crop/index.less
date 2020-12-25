@@ -1,0 +1,47 @@
+.ml-middle {
+    margin-left: 16px;
+}
+
+.crop-modal {
+    .content {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+
+        .originImage {
+            max-width: 60%;
+            overflow: hidden;
+        }
+        .clipImage {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            img {
+                max-width: 60%;
+            }
+        }
+    }
+
+    .footer {
+        padding: 10px 16px;
+        text-align: center;
+        background: transparent;
+        border-top: 1px solid #e8e8e8;
+        border-radius: 0 0 4px 4px;
+        
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+
+    .crop {
+        margin: 0 auto;
+        display: inline-block;
+    }
+}

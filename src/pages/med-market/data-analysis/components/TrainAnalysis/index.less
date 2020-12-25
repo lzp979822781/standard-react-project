@@ -1,0 +1,65 @@
+.train-analysis {
+    padding: 24px;
+
+    .content {
+        .card {
+            display: flex;
+            .icon {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    .title {
+        padding: 24px 0;
+    }
+    .base-info {
+        // padding: 24px 0;
+    }
+
+    .textEllipse {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+
+    :global {
+        .ant-descriptions-row > th, .ant-descriptions-row > td {
+            vertical-align: top;
+        }
+
+        /* .ant-table-row-cell-break-word {
+            padding: 4px 16px;
+        } */
+
+        .ant-card-head-title {
+            padding: 12px 0;
+        }
+
+        .ant-card-body {
+            padding: 12px 24px;
+        }
+
+        .ant-tabs-bar {
+            margin: 0;
+            border-bottom: none;
+        }
+
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+            border-bottom: none;
+        }
+    }
+
+    .actName span {
+        vertical-align: top;
+        &:last-child {
+            max-width: 60%;
+        }
+    }
+}
+
+.train-analy-search {
+    overflow: hidden;
+}
